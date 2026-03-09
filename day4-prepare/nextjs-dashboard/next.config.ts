@@ -1,7 +1,10 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  webpack(config) {
+    config.devtool = 'source-map'; // 开启source map
+    return config;
+  },
 };
 
 export default nextConfig;
