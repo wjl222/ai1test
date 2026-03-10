@@ -1,4 +1,4 @@
-export default function () {
+export default function Customers () {
     return (
         <div>
             <p>Customers Page</p>
