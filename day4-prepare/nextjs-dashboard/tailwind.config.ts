@@ -18,7 +18,14 @@ const config: Config = {
           600: '#2F6FEB',
         },
       },
+      padding: {
+        1: '40px'
+      },
+      fontSize: {
+        'base': ['30px', '2rem']
+      },
     },
+
     keyframes: {
       shimmer: {
         '100%': {
