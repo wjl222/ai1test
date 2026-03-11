@@ -23,6 +23,21 @@ export default function Tailwindcss() {
                     </li>
                 })}
             </ul>
+            <div className="mx-auto w-auto h-[50px] items-center bg-[#eee] text-center rounded-full gap-5 text-[red] text-[20px] hover:text-[30px] cursor-pointer px-[10px] box-content flex justify-center">
+              <div className="flex-1 flex-shrink-0 text-nowrap">范德萨范德萨萨</div>
+              <div className="flex-1">范德萨范德萨</div>
+              <div className="flex-1 ">范德萨范德萨</div>
+              <div className="flex-1">范德萨范德萨</div>
+            </div>
+            <div className="outline mt-[10px] h-[50px] leading-[50px] rounded-full shadow-black shadow-lg overflow-hidden text-center  pb-4">
+              减肥的撒酒疯 减肥的撒酒疯 减肥的撒酒疯 减肥的撒酒疯
+            </div>
+            <div className="space-y-[10px]">
+              <div className=" ">fdsajdfsa</div>
+              <div className="">fdsajdfsa</div>
+              <div className="">fdsajdfsa</div>
+            </div>
+            <button  className=" disabled:hover:bg-sky-500 border-purple-200 border-[2px] rounded-full px-[10px] hover:text-white border-separate text-purple-500 hover:bg-purple-500 active:text-purple-900">Message</button>
         </div>
     )
 }
