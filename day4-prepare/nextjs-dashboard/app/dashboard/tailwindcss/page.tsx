@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Tiptap from "@/components/Tiptap";
 
 export default function Tailwindcss() {
     return (
         <div>
-          a
+            <Tiptap />
         </div>
     )
 }
