@@ -1,7 +1,7 @@
 'use client'
 
-import { useEditor, EditorContent } from '@tiptap/react'
-import { CustomHeading } from "./extensions/customExtensions";
+import { useEditor, EditorContent, ChainedCommands } from '@tiptap/react'
+import { CustomParagraph } from "./extensions/customExtensions";
 
 
 import StarterKit from '@tiptap/starter-kit'
@@ -10,8 +10,8 @@ import { useEffect } from 'react';
 const Tiptap = () => {
   const editor = useEditor({
     extensions: [StarterKit.configure({
-      heading: false
-    }), CustomHeading],
+      paragraph: false
+    }), CustomParagraph],
     content: '<p>Hello World! 🌎️</p>',
     editorProps: {
       attributes: {
@@ -22,6 +22,10 @@ const Tiptap = () => {
     immediatelyRender: false,
   })
 
+  const handleDianji = () => {
+    editor?.chain().focus().setParagraphColor('red').run()
+  }
+
 //   useEffect(() =>{
 //     const storage = editor?.storage as unknown as {
 //   CustomHeading: {
@@ -31,7 +35,14 @@ const Tiptap = () => {
 // const value = storage?.CustomHeading.awesomeness
 //   }, [editor])
 
-  return <EditorContent editor={editor} />
+  return (
+    <>
+      <div>
+        <button onClick={handleDianji}>dianji</button>
+      </div>
+      <EditorContent editor={editor} />
+    </>
+  )
 }
 
 export default Tiptap
