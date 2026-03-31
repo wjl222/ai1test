@@ -1,4 +1,4 @@
-import Tiptap from "@/components/Tiptap";
+import Tiptap from "@/components/TipTapEditor/Tiptap";
 
 export default function Tailwindcss() {
     return (

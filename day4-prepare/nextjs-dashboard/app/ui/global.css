@@ -1,5 +1,8 @@
 /* @import "tw-animate-css"; */
 /* @import "shadcn/tailwind.css"; */
+
+@plugin "@tailwindcss/typography";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -95,5 +98,54 @@ input[type='number']::-webkit-outer-spin-button {
   }
   .theme {
     --font-sans: var(--font-sans);
+  }
+}
+
+.tiptap {
+  p.is-editor-empty:first-child::before {
+    color: #adb5bd;
+    content: attr(data-placeholder);
+    float: left;
+    height: 0;
+    pointer-events: none;
+  }
+  ul[data-type='taskList'] {
+    li {
+      display: flex;
+      align-items: flex-start;
+      margin: 0.2rem 0;
+      & > div > p:first-child {
+        margin: 0;
+      }
+      & > label {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+/* Bubble menu */
+.bubble-menu {
+  background-color: var(--white);
+  border: 1px solid var(--gray-1);
+  border-radius: 0.7rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  padding: 0.2rem;
+
+  button {
+    background-color: unset;
+
+    &:hover {
+      background-color: var(--gray-3);
+    }
+
+    &.is-active {
+      background-color: var(--purple);
+
+      &:hover {
+        background-color: var(--purple-contrast);
+      }
+    }
   }
 }
