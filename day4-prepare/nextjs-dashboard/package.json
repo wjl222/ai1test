@@ -8,11 +8,15 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
     "@neondatabase/serverless": "^1.0.2",
+    "@next/mdx": "^16.2.1",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/typography": "^0.5.19",
     "@tiptap/extension-bullet-list": "^3.21.0",
     "@tiptap/extension-heading": "^3.21.0",
+    "@types/mdx": "^2.0.13",
     "@tiptap/extension-text-style": "^3.20.5",
     "@tiptap/pm": "^3.20.5",
     "@tiptap/react": "^3.20.5",
@@ -37,10 +41,12 @@
     "zod": "^3.25.17"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
     "@types/bcrypt": "^5.0.2",
     "@types/node": "22.10.7",
     "@types/react": "19.0.7",
     "@types/react-dom": "19.0.3",
+    "baseline-browser-mapping": "^2.10.10",
     "eslint": "^9.39.4",
     "eslint-config-next": "^16.1.6",
     "typescript": "5.7.3"
